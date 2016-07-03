@@ -16,9 +16,9 @@
 		[null, null, null, null]
 	],
 	__row = document.querySelectorAll('.row'),
-	threshold = 150,
+	threshold = 100,
 	restraint = 100,
-	allowedTime = 500,
+	allowedTime = 300,
 	elapsedTime;
 
     function init(){
