@@ -16,9 +16,9 @@
 		[null, null, null, null]
 	],
 	__row = document.querySelectorAll('.row'),
-	threshold = 150,
+	threshold = 100,
 	restraint = 100,
-	allowedTime = 500,
+	allowedTime = 300,
 	elapsedTime;
 
     function init(){
@@ -203,7 +203,7 @@
 		for(var i = 0, rLeng = map.length; i < rLeng; i+=1) {
 			for (var j = eval(start); eval(limit); eval(offset)) {
 				if(!map[i][j]){
-					break;
+					continue;
 				}	
 
 				var k = eval(find);
@@ -262,7 +262,7 @@
 		for(var i = 0, rLeng = map.length; i < rLeng; i+=1) {
 			for (var j = eval(start); eval(limit); eval(offset)) {
 				if(!map[j][i]){
-					break;
+					continue;
 				}	
 
 				var k = eval(find);
